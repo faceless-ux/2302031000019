@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FableFlow - Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #121212; /* Dark theme */
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit; /* Inherit color for links */
+        }
+
+        /* Navbar (Header) */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #121212; /* Match body */
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff; /* Simple white logo */
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #fff; /* White for minimalism */
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #007BFF; /* Blue hover */
+        }
+
+        /* Main Section */
+        main {
+            flex: 1;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .project-card {
+            background-color: #1e1e1e; /* Dark gray card */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .project-card h3 {
+            font-size: 22px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            color: #bbbbbb;
+            margin-bottom: 20px;
+        }
+
+        .project-card a {
+            padding: 10px 20px;
+            background-color: #007BFF; /* Blue button */
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .project-card a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #121212; /* Match theme */
+            color: #cccccc; /* Light gray for footer */
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-column h4 {
+            color: white;
+            font-size: 18px;
+        }
+
+        .footer-column a {
+            color: #cccccc; /* Light gray links */
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: #007BFF; /* Blue hover for footer */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (Header) -->
+    <header class="navbar">
+        <a href="home.html" class="logo">Fable<span style="color: #007BFF;">Flow</span></a>
+        <nav class="nav-links">
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about-us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <h1>Our AI-Powered Storytelling Projects</h1>
+
+        <div class="projects-container">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <h3>Project: Cosmic Tales</h3>
+                <p>An AI-generated science fiction series exploring space travel and intergalactic adventures.</p>
+                <a href="project-cosmic-tales.html">View Project</a>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <h3>Project: Mythical Legends</h3>
+                <p>A journey through ancient myths and folklore, brought to life through the power of AI.</p>
+                <a href="project-mythical-legends.html">View Project</a>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <h3>Project: Historical Chronicles</h3>
+                <p>Experience AI-generated historical narratives that bring the past to the present.</p>
+                <a href="project-historical-chronicles.html">View Project</a>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <h3>Project: Dreamscapes</h3>
+                <p>Explore surreal, dream-like narratives crafted by FableFlow's AI-driven creativity.</p>
+                <a href="project-dreamscapes.html">View Project</a>
+            </div>
+
+            <!-- Additional Projects (if needed) -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <a href="mailto:contact@fableflow.com">contact@fableflow.com</a>
+            <a href="tel:+11234569999">+1 (123) 456-9999</a>
+            <p>FableFlow HQ, Ahmedabad, Gujarat, India</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Useful Links</h4>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="progress-tracker.html">Progress Tracker</a>
+        </div>
+    </footer>
+
+</body>
+</html>

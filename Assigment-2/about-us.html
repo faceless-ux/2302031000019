@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FableFlow - About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #121212; /* Dark theme */
+            color: white; /* White text for contrast */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit; /* Inherit color for links */
+        }
+
+        /* Navbar (Header) */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #121212; /* Match body */
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff; /* Simple white logo */
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #fff; /* White for minimalism */
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #007BFF; /* Blue hover */
+        }
+
+        /* Main Section */
+        main {
+            flex: 1;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #bbbbbb; /* Light gray for text */
+            max-width: 800px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #121212; /* Match theme */
+            color: #cccccc; /* Light gray for footer */
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-column h4 {
+            color: white;
+            font-size: 18px;
+        }
+
+        .footer-column a {
+            color: #cccccc; /* Light gray links */
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: #007BFF; /* Blue hover for footer */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (Header) -->
+    <header class="navbar">
+        <a href="home.html" class="logo">Fable<span style="color: #007BFF;">Flow</span></a>
+        <nav class="nav-links">
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about-us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <h1>About FableFlow</h1>
+
+        <p>
+            At FableFlow, we are revolutionizing the art of storytelling through the power of artificial intelligence. Our mission is to empower storytellers—both aspiring and experienced—by providing them with innovative tools that make crafting compelling stories effortless and exciting.
+        </p>
+
+        <p>
+            Whether you're a writer, content creator, or just someone who loves to tell stories, FableFlow offers the perfect platform to transform your creative ideas into reality. Our AI-driven storytelling engine is designed to bring your prompts to life, offering endless possibilities for narrative exploration.
+        </p>
+
+        <p>
+            We believe that stories have the power to connect, inspire, and entertain. That's why we're committed to making storytelling accessible for everyone, allowing users to create without boundaries. Our easy-to-use interface, coupled with advanced AI algorithms, ensures that anyone can generate professional-quality stories in minutes.
+        </p>
+
+        <p>
+            Join us on this journey and discover how FableFlow is reshaping the way stories are told. Unleash your creativity and let the power of AI help you write the next great chapter of your story.
+        </p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <a href="mailto:contact@fableflow.com">contact@fableflow.com</a>
+            <a href="tel:+11234569999">+1 (123) 456-9999</a>
+            <p>FableFlow HQ, Ahmedabad, Gujarat, India</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Useful Links</h4>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="progress-tracker.html">Progress Tracker</a>
+        </div>
+    </footer>
+
+</body>
+</html>

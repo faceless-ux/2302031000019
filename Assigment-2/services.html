@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FableFlow - Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: #121212; /* Dark theme */
+            color: white; /* White text for contrast */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit; /* Inherit color for links */
+        }
+
+        /* Navbar (Header) */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #121212; /* Match body */
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff; /* Simple white logo */
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: #fff; /* White for minimalism */
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #007BFF; /* Blue hover */
+        }
+
+        /* Main Section */
+        main {
+            flex: 1;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 30px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .service-card {
+            background-color: #1e1e1e; /* Dark gray card */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #bbbbbb;
+            margin-bottom: 20px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #121212; /* Match theme */
+            color: #cccccc; /* Light gray for footer */
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-column h4 {
+            color: white;
+            font-size: 18px;
+        }
+
+        .footer-column a {
+            color: #cccccc; /* Light gray links */
+            transition: color 0.3s;
+        }
+
+        .footer-column a:hover {
+            color: #007BFF; /* Blue hover for footer */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (Header) -->
+    <header class="navbar">
+        <a href="home.html" class="logo">Fable<span style="color: #007BFF;">Flow</span></a>
+        <nav class="nav-links">
+            <a href="login.html">Login</a>
+            <a href="home.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about-us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <h1>Our Services</h1>
+
+        <div class="services-container">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                <h3>AI Story Generation</h3>
+                <p>Create fully customized stories based on your prompts. Whether you need a short tale or an epic saga, FableFlow's AI will bring your ideas to life.</p>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card">
+                <h3>Character Development</h3>
+                <p>Design compelling characters with rich backstories and personalities. Our AI will help you create multidimensional characters for your stories.</p>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <h3>World-Building Assistance</h3>
+                <p>Need help with world-building? FableFlow's AI can generate intricate worlds with detailed histories, locations, and cultures to fit your story.</p>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="service-card">
+                <h3>Plot Structuring</h3>
+                <p>Struggling with story structure? Our AI will help you map out a cohesive plot with well-developed arcs to keep readers engaged from start to finish.</p>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="service-card">
+                <h3>Real-Time Story Editing</h3>
+                <p>Edit your story in real-time as you write. FableFlow offers grammar checks, stylistic suggestions, and tone adjustments to polish your narrative.</p>
+            </div>
+
+            <!-- Additional services can be added as needed -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <a href="mailto:contact@fableflow.com">contact@fableflow.com</a>
+            <a href="tel:+11234569999">+1 (123) 456-9999</a>
+            <p>FableFlow HQ, Ahmedabad, Gujarat, India</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Useful Links</h4>
+            <a href="terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="progress-tracker.html">Progress Tracker</a>
+        </div>
+    </footer>
+
+</body>
+</html>
